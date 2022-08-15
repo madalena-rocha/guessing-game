@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+    /* angulação (indo da esquerda para a direita, de cima para baixo), cor de início e cor ao final */
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center; /* centralizando os itens dentro do body no meio do body */
+    height: 100vh;
+}
+
+body, button, input {
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    background-color: #7879F1;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 .4rem .4rem 0;
+    cursor: pointer;
+
+    transition: background .3s;
+}
+
+button:hover {
+    background-color: #6363ce;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1); /* deslocamento no eixo x, deslocamento no eixo y, blur e cor */
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+    /*
+    - pega o mínimo entre dois valores
+    - se o tamanho da tela for de no mínimo 42.8rem, mantém o tamanho da caixa em 42.8rem
+    - caso diminua o tamanho da tela para menos que 42.8rem, o tamanho da caixa será de 90%
+    */
+    margin-top: -12rem;
+
+    text-align: center;
+}
+
+/* screen1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+h1, p {
+    color: #343558;
+}
+
+p {
+    opacity: .8;
+}
+
+form {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+input, button {
+    border: none;
+    padding: 1.6rem;
+}
+
+input {
+    background-color: #DCE2E9;
+    width: 6rem;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+/*screen2 */
+h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+
+    margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+    border-radius: .4rem;
+}
