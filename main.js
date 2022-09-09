@@ -20,6 +20,8 @@ function handleTryClick(event) {
     if(Number(inputNumber.value) == randomNumber) {
         toggleScreen()
     
+        xAttempts == 1 ? 
+        screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativa` : 
         screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas`
     }
 
