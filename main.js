@@ -2,7 +2,7 @@ const screen1 = document.querySelector(".screen1")
 const screen2 = document.querySelector(".screen2")
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
-const randomNumber = Math.round(Math.random() * 10)
+let randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
 
 btnTry.addEventListener('click', handleTryClick)
@@ -29,6 +29,7 @@ function handleTryClick(event) {
 
 function handleResetClick() {
     toggleScreen()
+    randomNumber = Math.round(Math.random() * 10) // resetando o número randômico ao acertar a tentativa e clicar no botão "Jogar novamente"
     xAttempts = 1
 }
 
