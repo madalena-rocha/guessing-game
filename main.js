@@ -39,7 +39,7 @@ function toggleScreen() {
 }
 
 function handleEnterKey(e) {
-    if(e.key == 'Enter') {
+    if(e.key == 'Enter' && (screen1.classList.contains('hide'))) {
         handleResetClick()
     }
 }
